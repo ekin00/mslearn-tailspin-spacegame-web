@@ -16,5 +16,4 @@ steps:
 - script: |
 dotnet build --configuration $(buildConfiguration)
 echo BBBB done
- displayName: 'dotnet build $(buildConfiguration)'
-  script: echo BBBBBBBB
+displayName: 'dotnet build $(buildConfiguration)'
