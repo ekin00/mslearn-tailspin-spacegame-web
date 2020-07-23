@@ -15,5 +15,5 @@ variables:
 steps:
 - script: > 
 dotnet build --configuration $(buildConfiguration)
-echo hello world BBBB
+echo 'hello world BBBB'
   displayName: 'dotnet build $(buildConfiguration)'
