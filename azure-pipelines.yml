@@ -45,9 +45,15 @@ steps:
     command: 'restore'
     projects: '**/*.csproj'
 
-#BT add too close to #
-# test add comment for replace "build" to use templates
-# 
+ 
+#BT: remove for templates
+#- task: DotNetCoreCLI@2
+# displayName: 'Build the project - $(buildConfiguration)'
+#  inputs:
+#    command: 'build'
+#    arguments: '--no-restore --configuration $(buildConfiguration)' 
+#    projects: '**/*.csproj'
+
 - template: templates/build.yml
   parameters:
     buildConfiguration: 'Debug'
