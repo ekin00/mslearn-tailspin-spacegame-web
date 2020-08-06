@@ -44,13 +44,6 @@ steps:
   inputs:
     command: 'restore'
     projects: '**/*.csproj'
-#BT: remove for templates
-#- task: DotNetCoreCLI@2
-# displayName: 'Build the project - $(buildConfiguration)'
-#  inputs:
-#    command: 'build'
-#    arguments: '--no-restore --configuration $(buildConfiguration)'
-#    projects: '**/*.csproj'
 
 - template: templates/build.yml
   parameters:
