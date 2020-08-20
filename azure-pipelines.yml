@@ -30,9 +30,9 @@ steps:
   displayName: 'Compile Sass assets'
 
 - task: gulp@1
-  displayName: 'Run gulp tasks - ${Build.BuildUri} '
+  displayName: 'Run gulp tasks - '
 
-- script: 'echo "$(Build.DefinitionName), , $(Build.BuildNumber)" > buildinfo.txt'
+- script: 'echo "$(Build.DefinitionName), $(Build.BuildUri) , $(Build.BuildNumber)" > buildinfo.txt'
   displayName: 'Write build info'
   workingDirectory: $(wwwrootDir)
 
