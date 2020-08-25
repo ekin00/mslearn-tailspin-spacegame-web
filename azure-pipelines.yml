@@ -15,6 +15,9 @@ variables:
   wwwrootDir: 'Tailspin.SpaceGame.Web/wwwroot'
   dotnetSdkVersion: '3.1.300'
 
+jobs:
+  # test container: 
+  environment: 'BBB test'
 steps:
 - task: UseDotNet@2
   displayName: 'Use .NET Core SDK $(dotnetSdkVersion) BBBB= $(Build.BuildNumber) '
