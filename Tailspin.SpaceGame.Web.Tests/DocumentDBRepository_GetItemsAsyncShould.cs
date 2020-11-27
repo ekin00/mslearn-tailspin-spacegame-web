@@ -26,7 +26,7 @@ namespace Tests
 
         [TestCase("Milky Way")]
         [TestCase("Andromeda")]
-        [TestCase("Pinwheel")]
+        [TestCase("Pinwheel-BOB")]
         [TestCase("NGC 1300-BOB")]
         [TestCase("Messier 82")]
         public void FetchOnlyRequestedGameRegion(string gameRegion)
